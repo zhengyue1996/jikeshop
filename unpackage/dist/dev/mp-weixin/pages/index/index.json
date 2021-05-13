@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "极客营",
+  "usingComponents": {
+    "uni-link": "/components/uni-link/uni-link"
+  }
+}
