@@ -1,25 +1,42 @@
-const baseUrl ="http://localhost:8080",
+const baseUrl = "http://1.15.157.130";
 
-export const myRequest = (options)=>{
-	return new Promise((resolve,reject)=>{
+export function myRequestGet(url, data) {
+	return new Promise((resolve, reject) => {
 		uni.request({
-			method: options.method,
-			data: options.data,
-			url: baseUrl+options.url,
-			success(res) {
-				if(res.data.status !== 0) {
-					return uni.showToast({
-						title: '获取数据失败'
-					})
-				}
+			url: baseUrl + url,
+			method: "GET",
+			header: {
+				'Content-Type': 'application/X-WWW-form-urlencoded'
+			},
+			data: data,
+			success: function(res) {
 				resolve(res.data)
 			},
-			fail(err) {
-				uni.showToast({
-					title: '获取数据失败'
-				})
+			fail: function(err) {
 				reject(err)
 			}
 		})
 	})
 }
+
+
+export function myRequestPOST(url, data) {
+	return new Promise((resolve, reject) => {
+		uni.request({
+			url: baseUrl + url,
+			method: "POST",
+			header: {
+				'Content-Type': 'application/X-WWW-form-urlencoded'
+			},
+			data: data,
+			success: function(res) {
+				resolve(res.data)
+			},
+			fail: function(err) {
+				reject(err)
+			}
+		})
+	})
+}
+
+//

@@ -1,7 +1,76 @@
-
-.container {
-	padding: 20px;
-	font-size: 14px;
-	line-height: 24px;
+.container .swiper {
+  height: 422rpx;
+}
+.container .swiper image {
+  width: 100%;
+}
+.container .uni-grid-item {
+  text-align: center;
+}
+.container .uni-grid-item .iconfont {
+  background: pink;
+  line-height: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 90px;
+  margin: 10px auto;
+  font-size: 20px;
+}
+.container .uni-grid-item text {
+  font-size: 14px;
+}
+.container .hot_goods {
+  background: #eee;
+}
+.container .hot_goods .tit {
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  color: blue;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 20px;
+  background: #fff;
+}
+.container .hot_goods .goods_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 15rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  overflow: hidden;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.container .hot_goods .goods_list .goods_item {
+  width: 355rpx;
+  margin-bottom: 15rpx;
+  background: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container .hot_goods .goods_list .goods_item image {
+  height: 150px;
+  width: 100%;
+  mix-width: 160px;
+  margin: 10px auto;
+}
+.container .hot_goods .goods_list .goods_item .price {
+  font-size: 18px;
+  color: red;
+  padding: 8px 0;
+}
+.container .hot_goods .goods_list .goods_item .price text:nth-child(2) {
+  color: #ccc;
+  text-decoration: line-through;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.container .hot_goods .goods_list .goods_item .name {
+  font-size: 14px;
 }
 
