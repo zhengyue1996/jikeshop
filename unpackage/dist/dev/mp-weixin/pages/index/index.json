@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "极客营",
+  "navigationBarTitleText": "极客商城",
   "usingComponents": {
     "uni-link": "/components/uni-link/uni-link"
   }
